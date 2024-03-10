@@ -1,0 +1,10 @@
+{
+  "version.label": {
+    "message": "0.73",
+    "description": "The label for version 0.73"
+  },
+  "sidebar.docs.category.大模型": {
+    "message": "大模型",
+    "description": "The label for category 大模型 in sidebar docs"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "title": {
+    "message": "和光科技",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "和光科技",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.前沿动态": {
+    "message": "前沿动态",
+    "description": "Navbar item with label 前沿动态"
+  },
+  "item.label.大模型": {
+    "message": "大模型",
+    "description": "Navbar item with label 大模型"
+  },
+  "item.label.技术方案": {
+    "message": "技术方案",
+    "description": "Navbar item with label 技术方案"
+  },
+  "item.label.架构设计": {
+    "message": "架构设计",
+    "description": "Navbar item with label 架构设计"
+  },
+  "item.label.安全": {
+    "message": "安全",
+    "description": "Navbar item with label 安全"
+  },
+  "item.label.博客": {
+    "message": "博客",
+    "description": "Navbar item with label 博客"
+  },
+  "item.label.关于和光": {
+    "message": "关于和光",
+    "description": "Navbar item with label 关于和光"
+  }
+}

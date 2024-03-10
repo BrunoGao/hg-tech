@@ -1,0 +1,51 @@
+{
+  "name": "react-native-website-monorepo",
+  "private": true,
+  "workspaces": [
+    "website",
+    "plugins/*",
+    "scripts/*",
+    "sync-api-docs"
+  ],
+  "scripts": {
+    "postinstall": "yarn update-lock",
+    "update-lock": "yarn-deduplicate",
+    "docusaurus": "yarn workspace react-native-website docusaurus",
+    "website:start": "yarn workspace react-native-website start",
+    "website:build": "yarn workspace react-native-website build",
+    "website:build:fast": "yarn workspace react-native-website build:fast",
+    "website:serve": "yarn workspace react-native-website serve"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "dependencies": {
+    "@docusaurus/plugin-sitemap": "^3.1.1",
+    "@docusaurus/theme-search-algolia": "^3.1.1",
+    "babel-eslint": "^10.1.0",
+    "case-police": "^0.5.14",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^8.10.0",
+    "eslint-plugin-mdx": "^1.17.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-yml": "^1.12.2",
+    "husky": "^4.3.8",
+    "netlify-plugin-cache": "^1.0.3",
+    "prettier": "^2.8.8",
+    "pretty-quick": "^3.3.1",
+    "yarn-deduplicate": "^5.0.2"
+  },
+  "resolutions": {
+    "axios": "^1.6.2",
+    "trim": "^1.0.1",
+    "update-notifier": "^6.0.2",
+    "@sideway/formula": ">=3.0.1"
+  },
+  "comments": {
+    "resolutions": {
+      "axios": "Removable after Docusaurus commit with https://github.com/facebook/docusaurus/pull/9547"
+    }
+  }
+}

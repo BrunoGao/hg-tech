@@ -1,0 +1,72 @@
+$namespace: ai-summary;
+
+@keyframes shaking {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(0eg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.#{$namespace} {
+  margin-bottom: 20px;
+
+  :root {
+    --button-bg-color: #555;
+    --button-border-color: #777;
+    --button-hover-bg-color: #666;
+  }
+
+  // 深色模式样式
+  @media (prefers-color-scheme: dark) {
+    button-bg-color: #555;
+    button-border-color: #777;
+    button-hover-bg-color: #666;
+  }
+
+  // 浅色模式样式
+  @media (prefers-color-scheme: light) {
+    button-bg-color: #d4f5f9;
+    button-border-color: #e3edee;
+    button-hover-bg-color: rgb(235, 225, 225) 5f9;
+  }
+
+  &-button {
+    background-color: var(--button-bg-color);
+    border: 1px solid var(--button-border-color);
+
+    &:hover {
+      background-color: var(--button-hover-bg-color);
+    }
+  }
+
+  &-title {
+    font-size: 15px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+  }
+
+  &-content {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid var(--ifm-surface-border-color);
+    border-radius: 6px;
+
+    p {
+      &:last-of-type {
+        margin: 0;
+      }
+    }
+  }
+}

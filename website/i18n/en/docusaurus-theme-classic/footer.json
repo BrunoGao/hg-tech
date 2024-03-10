@@ -1,0 +1,66 @@
+{
+  "link.title.大模型": {
+    "message": "大模型",
+    "description": "The title of the footer links column with title=大模型 in the footer"
+  },
+  "link.title.架构设计": {
+    "message": "架构设计",
+    "description": "The title of the footer links column with title=架构设计 in the footer"
+  },
+  "link.title.联系我们": {
+    "message": "联系我们",
+    "description": "The title of the footer links column with title=联系我们 in the footer"
+  },
+  "link.title.获取更多": {
+    "message": "获取更多",
+    "description": "The title of the footer links column with title=获取更多 in the footer"
+  },
+  "link.item.label.LangChain": {
+    "message": "LangChain",
+    "description": "The label of footer link with label=LangChain linking to AI/2023/05/30/大语言模型技术原理"
+  },
+  "link.item.label.Stable diffusion": {
+    "message": "Stable diffusion",
+    "description": "The label of footer link with label=Stable diffusion linking to AI/2024/02/05/实现Stable diffusion自由"
+  },
+  "link.item.label.大语言模型技术原理": {
+    "message": "大语言模型技术原理",
+    "description": "The label of footer link with label=大语言模型技术原理 linking to AI/2023/05/30/大语言模型技术原理"
+  },
+  "link.item.label.人人都是架构师-清晰架构": {
+    "message": "人人都是架构师-清晰架构",
+    "description": "The label of footer link with label=人人都是架构师-清晰架构 linking to architecture/2022/02/21/人人都是架构师-清晰架构"
+  },
+  "link.item.label.详细分析Spring的AOP源码": {
+    "message": "详细分析Spring的AOP源码",
+    "description": "The label of footer link with label=详细分析Spring的AOP源码 linking to architecture/2023/03/07/详细分析Spring的AOP源码"
+  },
+  "link.item.label.Spring Boot启动源码分析": {
+    "message": "Spring Boot启动源码分析",
+    "description": "The label of footer link with label=Spring Boot启动源码分析 linking to architecture/2022/06/28/Spring Boot启动源码分析"
+  },
+  "link.item.label.Blog": {
+    "message": "Blog",
+    "description": "The label of footer link with label=Blog linking to blog"
+  },
+  "link.item.label.Twitter": {
+    "message": "Twitter",
+    "description": "The label of footer link with label=Twitter linking to https://twitter.com/gaojunivas"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/BrunoGao?tab=repositories"
+  },
+  "link.item.label.hg-tech": {
+    "message": "hg-tech",
+    "description": "The label of footer link with label=hg-tech linking to https://www.heguang-tech.cn/"
+  },
+  "copyright": {
+    "message": "Copyright © 2024 hg-tech\n<a href=\"http://beian.miit.gov.cn\" target=\"_blank\" rel=\"noopener\">粤ICP备19161989号-4</a>\"\n",
+    "description": "The footer copyright"
+  },
+  "logo.alt": {
+    "message": "hg-tech",
+    "description": "The alt text of footer logo"
+  }
+}
