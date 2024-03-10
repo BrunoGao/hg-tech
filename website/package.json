@@ -1,13 +1,13 @@
 {
-  "name": "react-native-website",
-  "description": "React Native website",
+  "name": "和光科技",
+  "description": "和光科技",
   "version": "0.0.1",
   "private": true,
   "license": "CC-BY-4.0",
-  "homepage": "https://reactnative.dev/",
-  "repository": "github:facebook/react-native-website",
+  "homepage": "https://www.heguang-tech.cn",
+  "repository": "https://github.com/BrunoGao/hg-tech.git",
   "bugs": {
-    "url": "https://github.com/facebook/react-native-website/issues"
+    "url": "https://github.com/BrunoGao/hg-tech/issues"
   },
   "scripts": {
     "docusaurus": "docusaurus",
