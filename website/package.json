@@ -1,11 +1,11 @@
 {
-  "name": "和光科技",
-  "description": "和光科技",
+  "name": "hg-tech",
+  "description": "hg-tech website",
   "version": "0.0.1",
   "private": true,
   "license": "CC-BY-4.0",
   "homepage": "https://www.heguang-tech.cn",
-  "repository": "https://github.com/BrunoGao/hg-tech.git",
+  "repository": "github:BrunoGao/hg-tech",
   "bugs": {
     "url": "https://github.com/BrunoGao/hg-tech/issues"
   },
