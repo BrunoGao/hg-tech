@@ -54,8 +54,8 @@ module.exports = {
     facebookAppId: '1677033832619985',
   },
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'zh-Hans',
+    locales: ['zh-Hans', 'en'],
   },
   onBrokenLinks: 'throw',
   webpack: {
@@ -316,21 +316,8 @@ module.exports = {
             position: 'right',
           },
           {
-            type: 'docsVersionDropdown',
-            position: 'left',
-            dropdownActiveClassDisabled: true,
-            dropdownItemsAfter: [
-              {
-                to: '/versions',
-                label: 'All versions',
-              },
-            ],
-          },
-          {
-            href: 'https://www.heguang-tech.cn',
-            'aria-label': 'GitHub repository',
+            type: 'localeDropdown',
             position: 'right',
-            className: 'navbar-github-link',
           },
         ],
       },
