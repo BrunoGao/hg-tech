@@ -1,5 +1,5 @@
 ---
-title: '实现Stable diffusion自由'
+title: 实现Stable diffusion自由
 authors: [京东云开发者]
 tags: [Stable diffusion]
 date: 2024-02-05
