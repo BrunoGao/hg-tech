@@ -571,9 +571,9 @@ const Index = () => {
       description="A framework for building native apps using React"
       wrapperClassName="homepage">
       <Head>
-        <title>和光科技，智能方便生活</title>
-        <meta property="og:title" content="和光科技，智能方便生活" />
-        <meta property="twitter:title" content="和光科技，智能方便生活" />
+        <title>和光科技，AI增强生活</title>
+        <meta property="og:title" content="和光科技，AI增强生活" />
+        <meta property="twitter:title" content="和光科技，AI增强生活" />
       </Head>
       <NativeDevelopment />
       <Community />
