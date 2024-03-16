@@ -24,7 +24,9 @@ const commonDocsOptions = {
 const isDeployPreview = process.env.PREVIEW_DEPLOY === 'true';
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
-module.exports = {
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
+export default {
   title: '和光科技',
   tagline: 'website for 和光科技',
   organizationName: '和光科技',
@@ -35,6 +37,7 @@ module.exports = {
     require.resolve('./modules/snackPlayerInitializer.js'),
     require.resolve('./modules/jumpToFragment.js'),
   ],
+
   trailingSlash: false, // because trailing slashes can break some existing relative links
   scripts: [
     {
@@ -57,7 +60,12 @@ module.exports = {
     defaultLocale: 'zh-Hans',
     locales: ['zh-Hans', 'en'],
   },
-  onBrokenLinks: 'throw',
+  markdown: {
+    mermaid: true,
+  },
+  themes: ['@docusaurus/theme-mermaid'],
+
+  onBrokenLinks: 'ignore',
   webpack: {
     jsLoader: isServer => ({
       loader: require.resolve('esbuild-loader'),
@@ -76,6 +84,8 @@ module.exports = {
         docs: {
           path: '../docs',
           sidebarPath: require.resolve('./sidebars.json'),
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [rehypeKatex],
           editCurrentVersion: true,
           onlyIncludeVersions: isDeployPreview
             ? ['current', ...versions.slice(0, 2)]
@@ -92,6 +102,8 @@ module.exports = {
           blogDescription: 'Blog',
           blogSidebarCount: 'ALL',
           blogSidebarTitle: '全部博客',
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [rehypeKatex],
           feedOptions: {
             type: 'all',
             copyright,
@@ -114,6 +126,15 @@ module.exports = {
         },
       }),
     ],
+  ],
+  stylesheets: [
+    {
+      href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
+      type: 'text/css',
+      integrity:
+        'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
+      crossorigin: 'anonymous',
+    },
   ],
   plugins: [
     [
@@ -247,6 +268,9 @@ module.exports = {
         backgroundColor: '#20232a',
         textColor: '#fff',
         isCloseable: false,
+      },
+      mermaid: {
+        theme: {light: 'neutral', dark: 'forest'},
       },
       giscus: {
         repo: 'BrunoGao/hg-tech',

@@ -49,7 +49,7 @@ export function AiSummary({ content }) {
 
       {show && (
         <div className={`${cls}-content`}>
-          <div className={`${cls}-title`}>
+          <div id="textToSpeak" className={`${cls}-title`}>
             <FaMagic style={{ marginRight: 5 }} />
             <span>
               生成 AI 摘要 <sup>powered by gpt4</sup>
