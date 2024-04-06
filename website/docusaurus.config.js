@@ -197,6 +197,15 @@ export default {
       '@docusaurus/plugin-content-blog',
       /** @type {import('@docusaurus/plugin-content-blog').Options} */
       ({
+        id: 'opensource',
+        path: 'opensource',
+        routeBasePath: '/opensource',
+      }),
+    ],
+    [
+      '@docusaurus/plugin-content-blog',
+      /** @type {import('@docusaurus/plugin-content-blog').Options} */
+      ({
         id: 'news',
         path: 'news',
         routeBasePath: '/news',
@@ -332,6 +341,11 @@ export default {
           {
             to: '/blog',
             label: '博客',
+            position: 'right',
+          },
+          {
+            to: '/opensource',
+            label: '开源',
             position: 'right',
           },
           {
